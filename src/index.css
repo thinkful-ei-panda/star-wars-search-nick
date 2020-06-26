@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+ul{
+  list-style: none;
+}
+
 main {
   color:#f7dd75;
   z-index:5;
@@ -13,7 +17,7 @@ main {
   font-family: 'Bungee', cursive;
   margin: 20px;
 }
-.subtitle{
+.subtitle, .results-list{
   color:#c6b679;
   font-size: 14px;
   font-family: 'Arvo', serif;
@@ -34,7 +38,7 @@ main {
 
 .centered{
   margin: auto;
-  margin-top: 30vh;
+  margin-top: 23vh;
   width: 100%;
   max-width: 400px
 }

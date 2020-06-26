@@ -1,11 +1,14 @@
 import React from 'react';
+import GalacticContext from '../GalacticContext'
 
 export default class SearchForm extends React.Component {
+  static contextType = GalacticContext;
+
   constructor(props) {
     super(props);
     this.state = {
       searchField: '',
-      category: ''
+      category: 'people'
     };
   }
 
@@ -19,6 +22,12 @@ export default class SearchForm extends React.Component {
     this.setState({
       category
     })
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    this.context.getData(this.state.category, this.state.searchField);
+    this.context.changeRenderNumber(1);
   }
 
   render() {
