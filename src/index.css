@@ -9,11 +9,13 @@ main {
   z-index:5;
 }
 .title{
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Bungee', cursive;
+  margin: 20px;
 }
 .subtitle{
-  font-size: 16px;
+  color:#c6b679;
+  font-size: 14px;
   font-family: 'Arvo', serif;
   font-weight: 400;
   font-style: italic;
@@ -35,6 +37,71 @@ main {
   margin-top: 30vh;
   width: 100%;
   max-width: 400px
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #f7dd75;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 0;
+  outline: none;
+  color: #9DBFAF;
+  background-color: black;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.searchTerm:focus{
+  color: #f7dd75;
+  background-color: black;
+}
+
+.searchButton {
+  width: 80px;
+  height: 36px;
+  border: 1px solid #f7dd75;
+  background: #f7dd75;
+  text-align: center;
+  color: rgb(24, 24, 24);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  padding:10px;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+select{
+  border: 3px solid #f7dd75;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #f7dd75;
+  background-color: black;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 
