@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+
+  render() {
+    return (
+      <body>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <main className='App center'>
+          <section className="centered">
+            <h1 className="title">Star Wars Galactic Search</h1>
+            <p className="subtitle">Search the starwars galaxy for characters, planets, vehicles and more!</p>
+          </section>
+
+          <form onSubmit={e => this.handleSubmit(e)}>
+            <div className="search-field">
+
+            </div>
+          </form>
+        </main>
+      </body>
+    );
+  }
 }
-
-export default App;
