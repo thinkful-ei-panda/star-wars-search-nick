@@ -30,10 +30,10 @@ A simple app built to query a Star Wars API and display the information found. T
 - LinkedIn - https://www.linkedin.com/in/nick-thorpe-dev/
 - Twitter - https://twitter.com/lostonestudios?lang=en
 - Instagram - https://saveig.org/lostonestudios/
-- Website - https://nick_lostonestudios.com/alchamancer/about
+- Website - https://nickthorpe.vercel.app/contact
 
 ---
 
 ## Credits
-thanks to https://swapi.dev/ for the great easy to use API
+Thanks to https://swapi.dev/ for the great, easy to use API/
 
